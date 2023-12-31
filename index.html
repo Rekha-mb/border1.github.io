@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        /* Add some basic styling for the header and footer */
+        header, footer {
+            background-color: blueviolet;
+            color: #fff;
+            text-align: left;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        p{
+            color: #fff;
+        }
+
+        select{
+            border: none;
+            background: none;
+            color: #fff;
+        }
+        th{
+            padding: 5px;
+            color: #000;
+            font-weight: normal;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+
+        th:hover{
+            background: #3B5998;
+            color: #fff;;
+        }
+
+        table, th, td {
+            border: none;
+            table-layout: fixed;
+        }
+
+        .fa {
+            padding: 10px;
+            border-radius: 2px;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #E4405F;
+            color: white;
+        }
+
+        .hidden-list {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            list-style: none;
+            margin-top: 500;
+        }
+
+        /* Styles for list items in the hidden list */
+        .hidden-list li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* Highlight the list item on hover */
+        .hidden-list li:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Add styling for the hover-container */
+        .hover-container {
+            position: relative;
+        }
+
+        main{
+            height: 60vh;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="hover-container">
+            <p onmouseover="showList()">Hover over me</p>
+            <ul class="hidden-list" id="dataList">
+                <li>Education</li>
+                <li>Database</li>
+                <li>Analytics</li>
+                <li>Functions</li>
+                <li>Enterprises</li>
+                
+             <li>Analytics</li>
+                <li>Functions</li>
+                <li>Enterprises</li>
+            </ul>
+        </div>
+
+        <!-- Your other header content here -->
+        <img src="https://leapcamp.in/assets/images/logo-dark.png" alt="Description of the image" width="60" height="60">
+        <select id="dropdown">
+            <option value="Explore">Explore </option>
+            
+        </select>
+        <select id="dropdown">
+            <option value="Enterprise">Enterprise </option>
+            
+        </select>
+        <select id="dropdown">
+            <option value="Business">Business </option>
+            
+        </select>
+        <select id="dropdown">
+            <option value="Images">Images </option>
+            
+        </select>
+        <select id="dropdown">
+            <option value="Programs">Programs </option>
+            
+        </select>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Signup</th>
+                    <th>Login</th>
+                </tr>
+            </thead>
+        </table>
+        
+        <!-- Add your other header elements (selects, table, etc.) here -->
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Leapcamp</h2>
+        <h4>Welcome to leapcamp page.</h4>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <img src="https://leapcamp.in/assets/images/logo-dark.png" alt="Description of the image" width="60" height="60">
+        <table border="1">
+            <thead>
+                <tr>
+                    <tf>Address</tf>
+                    <tf>Menu</tf>
+                    <tf>Browse course</tf>
+                    <td>
+                        <a class="fa fa-facebook"></a>
+                        <a class="fa fa-instagram"></a>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </footer>
+
+    <script>
+        function showList() {
+            document.getElementById('dataList').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
